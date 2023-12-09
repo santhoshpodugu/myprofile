@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Santhosh Podugu</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="left">Santhosh Podugu</div>
-      <div class="right">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santhosh Podugu</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><a href="">Santhosh Podugu</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello,
+          <div>I'm <span class="purple">Santhosh Podugu,</span></div>
+          <div>a Passionate</div>
+
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="./images/rightbg.png" alt="developer" />
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<b>UPSC</b> Aspirant", "Tech Enthusiast", "Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>
