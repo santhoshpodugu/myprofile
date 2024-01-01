@@ -16,7 +16,7 @@ nav {
     align-items: center;
     height: 80px;
     background-color: rgb(18, 18, 62);
-    box-shadow: 0 3px 5px rgb(58, 58, 110);
+    box-shadow: 0 0 5px 5px rgba(114, 114, 173, 0.2);
 }
 
 nav ul {
@@ -148,7 +148,6 @@ hr {
 
 .education-details {
     margin-left: 8px;
-
 }
 
 .institution-name {
@@ -172,24 +171,78 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px; 
+    height: 400px;
     margin-top: 50px;
 }
 
 .skills img {
     width: 150px;
-  }
+    cursor: pointer;
+}
 
-  .skills {
+.skills img:hover {
+    margin-top: 8px;
+    box-shadow: 0 0 5px 5px rgba(119, 119, 236, 0.2);
+    border-radius: 10px;
+}
+
+.skills {
     display: flex;
     align-items: center;
-    cursor: pointer;
     margin-top: 80px;
-  }
+}
 
-  .skills img{
+.skills img {
     margin-right: 50px;
     margin-left: 50px;
-  }
+}
+
+.myprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.projects-block {
+    display: flex;
+    margin-top: 60px;
+}
+
+.project-tile {
+    width: 400px;
+    margin: 0 150px;
+    padding: 5px;
+}
+
+.project-tile:hover {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(158, 143, 248, 0.2);
+}
 
 
+.project-tile img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-tile p {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(119, 119, 236);
+    padding: 2px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.project-tile h1 {
+    margin: 0;
+    font-size: 21px;
+}
