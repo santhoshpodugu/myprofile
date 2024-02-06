@@ -1,0 +1,86 @@
+@media screen and (max-width:920px) {
+
+    nav {
+        justify-content: start;
+        padding-left: 10px;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        position: fixed;
+        top: 28px;
+        right: 20px;
+        z-index: 105;
+    }
+    .right {
+        display: none;
+    }
+
+    .firstSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .firstSection>div {
+        width: auto;
+    }
+
+    .leftSection {
+        font-size: 35px;
+       
+    }
+
+    .rightSection img {
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+
+    .about-me {
+        justify-content: space-around;
+    }
+    .about-text {
+        font-size: 22px;
+    }
+
+    .myeducation {
+        margin-top: 40px;
+    }
+    
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 25px;
+    }
+
+    .skills img {
+        width: 80px;
+    }
+
+    .myprojects {
+        margin-top: 25px;
+        height: 1000px;
+    }
+    
+    .projects-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;   
+    }
+
+    .project-tile {
+        width: 360px;
+       /* border: 2px solid rgb(119, 119, 236); */
+        border-radius: 15px;
+    }
+
+    .project-tile img {
+        width: 360px;
+    }
+
+    .project-tile:hover {
+        transform: scale(1.1);
+    }
+
+
+}
