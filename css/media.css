@@ -4,16 +4,44 @@
         justify-content: start;
         padding-left: 10px;
     }
-    
+
+    .right {
+        display: none;
+    }
+
     .hamburger-menu {
         display: flex;
         position: fixed;
         top: 28px;
         right: 20px;
+        cursor: pointer;
         z-index: 105;
     }
-    .right {
-        display: none;
+
+    .hamburger-menu:hover {
+        filter: drop-shadow(0 0 5px rgb(110, 110, 241));
+    }
+
+    .sidebar ul {
+        height: auto;
+        width: 300px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background: rgba(53, 53, 139, 0.930) linear-gradient(150deg, black, transparent);
+        backdrop-filter: blur(10px);
+        transition: top ease-in-out 1s;
+        z-index: 104;
+    }
+
+    .sidebar ul li {
+        padding: 10px 5px;
+        border-bottom: 1px solid rgb(53 53 139);
+        margin: 0px 2px;
+        justify-content: center;
     }
 
     .firstSection {
@@ -28,7 +56,6 @@
 
     .leftSection {
         font-size: 35px;
-       
     }
 
     .rightSection img {
@@ -37,40 +64,48 @@
     }
 
     .about-me {
-        justify-content: space-around;
+        justify-content: space-evenly;
+        height: 800px;
     }
+
     .about-text {
         font-size: 22px;
     }
 
     .myeducation {
-        margin-top: 40px;
+        justify-content: space-evenly;
     }
-    
+
+    .myskills {
+        height: 600px;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    }
+
     .skills {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 25px;
+        row-gap: 75px;
     }
 
     .skills img {
-        width: 80px;
+        width: 90px;
     }
 
     .myprojects {
-        margin-top: 25px;
         height: 1000px;
+        padding-top: 30px;
     }
-    
+
     .projects-block {
         display: flex;
         flex-direction: column;
-        row-gap: 60px;   
+        row-gap: 60px;
     }
 
     .project-tile {
         width: 360px;
-       /* border: 2px solid rgb(119, 119, 236); */
+        /* border: 2px solid rgb(119, 119, 236); */
         border-radius: 15px;
     }
 
@@ -81,6 +116,4 @@
     .project-tile:hover {
         transform: scale(1.1);
     }
-
-
 }

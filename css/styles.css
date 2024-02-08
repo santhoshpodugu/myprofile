@@ -20,7 +20,7 @@ nav {
     align-items: center;
     height: 80px;
     background-color: rgb(18, 18, 62);
-   /* box-shadow: 0 0 5px 5px rgba(142, 142, 241, 0.1); */
+    /* box-shadow: 0 0 5px 5px rgba(142, 142, 241, 0.1); */
     z-index: 100;
 }
 
@@ -28,26 +28,33 @@ nav ul {
     display: flex;
 }
 
-nav ul li {
+nav ul li,
+.sidebar ul li {
     display: flex;
     margin: 0 23px;
 }
 
-nav ul li a {
+nav ul li a,
+.sidebar ul li a {
     text-decoration: none;
     color: white;
 }
 
-nav ul li a:hover {
-    color: rgb(142, 142, 241); 
+nav ul li a:hover,
+.sidebar ul li a:hover {
+    color: rgb(142, 142, 241);
     text-decoration: underline;
-    text-underline-offset: 32px;
+    text-underline-offset: 10px;
 }
 
 nav ul li a:active {
-    color: rgb(142, 142, 241); 
+    color: rgb(142, 142, 241);
     text-decoration: underline;
-    text-underline-offset: 32px;
+    text-underline-offset: 10px;
+}
+
+.sidebar {
+    display: none;
 }
 
 hr {
@@ -87,7 +94,7 @@ hr {
 }
 
 .leftSection {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
 }
 
 .rightSection img {
@@ -96,8 +103,12 @@ hr {
     margin-left: 72px;
 }
 
-.purple {
-    color: rgb(119, 119, 236);
+.name,
+#element {
+    background: rgb(110, 110, 241) linear-gradient(to top, rgb(18, 18, 62), transparent);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 #element {
@@ -110,7 +121,6 @@ hr {
     align-items: center;
     height: 700px;
     justify-content: space-evenly;
-    
 }
 
 .title {
@@ -118,8 +128,11 @@ hr {
     font-weight: bold;
 }
 
-.title span, .contact-me span {
-    color: rgb(119, 119, 236)
+.title span,
+.contact-me span {
+    background: rgb(110, 110, 241) linear-gradient(to top, rgb(18, 18, 62), transparent);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bottom-bar {
@@ -132,7 +145,7 @@ hr {
 .about-text {
     text-align: center;
     font-size: 32px;
-    
+
 }
 
 .myeducation {
@@ -141,7 +154,6 @@ hr {
     align-items: center;
     height: 700px;
     justify-content: space-around;
-    
 }
 
 
@@ -251,7 +263,7 @@ hr {
     margin-bottom: 12px;
     font-size: 12px;
     font-weight: bold;
-    background-color: rgb(119, 119, 236);
+    background: rgb(110, 110, 241) linear-gradient(to right, rgb(18, 18, 62), transparent);
     padding: 2px;
     text-align: center;
     border-radius: 8px;
@@ -284,10 +296,10 @@ hr {
     align-items: center;
     font-size: 28px;
     justify-content: space-evenly;
-    border: 1px solid rgb(119, 119, 236);
+    border: 0px solid rgb(119, 119, 236);
     border-radius: 10px;
     padding: 12px 24px;
-    background-color: rgba(119, 119, 236, 0.097);
+    background: rgb(53 53 139) linear-gradient(170deg, black, transparent);
     cursor: pointer;
     transition: transform ease-in 0.3s;
 }
@@ -299,5 +311,4 @@ hr {
 .social-card a:hover {
     transform: translateX(-8px) translateY(-5px);
     box-shadow: 0 0 5px 5px rgba(158, 143, 248, 0.2);
-    background-color: rgba(47, 47, 47, 0.158);
 }

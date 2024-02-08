@@ -28,13 +28,25 @@
           </ul>
         </div>
       </nav>
-      <div><img class="hamburger-menu" src="./icons/menu.svg" alt="" /></div>
+      <div class="hamburger-menu1">
+        <img class="hamburger-menu" src="./icons/menu.svg" alt="" />
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li class="ham-links"><a href="#">Home</a></li>
+          <li class="ham-links"><a href="#about">About</a></li>
+          <li class="ham-links"><a href="#education">Education</a></li>
+          <li class="ham-links"><a href="#skills">Skills</a></li>
+          <li class="ham-links"><a href="#projects">Projects</a></li>
+          <li class="ham-links"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="firstSection">
         <div class="leftSection">
           Hello,
-          <div>I'm <span class="purple">Santhosh Podugu,</span></div>
+          <div>I'm <span class="name">Santhosh Podugu,</span></div>
           <div>a Passionate</div>
 
           <span id="element"></span>
@@ -148,14 +160,17 @@
           <div class="bottom-bar"></div>
         </div>
         <div class="social-icons">
-          <div class="social-card" >
+          <div class="social-card">
             <a href="https://github.com/santhoshpodugu" target="_blank">
               <img src="./icons/github.svg" alt="" />
               <p>Github</p>
             </a>
           </div>
           <div class="social-card">
-            <a href="https://www.linkedin.com/in/santhosh-podugu-44a713119" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/santhosh-podugu-44a713119"
+              target="_blank"
+            >
               <img src="./icons/linkedin.svg" alt="" />
               <p>LinkedIn</p>
             </a>
@@ -176,11 +191,6 @@
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["<b>UPSC</b> Aspirant", "Tech Enthusiast", "Web Developer."],
-        typeSpeed: 50,
-      });
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
