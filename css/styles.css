@@ -35,13 +35,13 @@ nav ul li,
 }
 
 nav ul li a,
-.sidebar ul li a {
+.sidebar div a {
     text-decoration: none;
     color: white;
+    
 }
 
-nav ul li a:hover,
-.sidebar ul li a:hover {
+nav ul li a:hover {
     color: rgb(142, 142, 241);
     text-decoration: underline;
     text-underline-offset: 10px;
