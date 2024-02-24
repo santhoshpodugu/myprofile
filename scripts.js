@@ -1,39 +1,19 @@
+const hamburger = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+const navLink = document.querySelectorAll('.nav-link');
 
-
-const hamburgerMenu = document.querySelector('.hamburger-menu1');
-const bodyMain = document.body;
-
-hamburgerMenu.addEventListener('click', () => {
-    menuDisplay();
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
 });
 
-let isMenuDisplaying = false;
-
-function menuDisplay() {
-    const menu = document.querySelector('.sidebar');
-
-    if (!isMenuDisplaying && (menu.style.display = 'none')) {
-        menu.style.display = 'block';
-        isMenuDisplaying = true;
-        hamburgerMenu.innerHTML = `<img class ='hamburger-menu' src = './icons/close.svg'>`;
-    }
-    else if (isMenuDisplaying && (menu.style.display = 'block')) {
-        menu.style.display = 'none';
-        isMenuDisplaying = false;
-        hamburgerMenu.innerHTML = `<img class ='hamburger-menu' src = './icons/menu.svg'>`;
-
-    }
-}
-
-const menuList = document.querySelectorAll('.ham-links');
-
-    menuList.forEach((link) => {
-        link.addEventListener('click', () => {
-                menuDisplay();
-        })
+navLink.forEach((link) => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
     });
-
-
+    
+})
 
 var typed = new Typed("#element", {
     strings: ["<b>UPSC</b> Aspirant", "Tech Enthusiast", "Web Developer."],
