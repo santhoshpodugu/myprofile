@@ -1,15 +1,56 @@
 @media screen and (max-width:920px) {
 
     nav {
-        justify-content: start;
-        padding-left: 10px;
+        justify-content: space-between;
+        padding: 0 12px;
     }
 
-    .right {
-        display: none;
+    .nav-menu {
+        position: fixed;
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        top: 80px;
+        right: -100%;
+        background: rgba(53, 53, 139, 0.930) linear-gradient(150deg, black, transparent);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        z-index: 104;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        padding: 8px 0;
+    }
+
+    .nav-link:hover {
+        background: rgb(110, 110, 241) linear-gradient(170deg, rgb(18, 18, 62), transparent);
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-menu.active {
+        right: 0;
     }
 
     .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /*.hamburger-menu {
         display: flex;
         position: fixed;
         top: 28px;
@@ -44,7 +85,7 @@
 
     .ham-links:hover {
         background: rgb(110, 110, 241) linear-gradient(170deg, rgb(18, 18, 62), transparent);
-    }
+    } */
 
     .firstSection {
         display: flex;
@@ -78,10 +119,11 @@
         justify-content: space-evenly;
     }
 
+
     .myskills {
         height: 600px;
         justify-content: space-evenly;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 
     .skills {
@@ -96,7 +138,7 @@
 
     .myprojects {
         height: 1000px;
-        padding-top: 30px;
+        padding-top: 60px;
     }
 
     .projects-block {
